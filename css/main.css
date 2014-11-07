@@ -1,5 +1,16 @@
-.results {
-	display: none;
+.results-container {
+  display: none;
 }
 
+footer {
+  border-top: 1px solid lightgray;
+  position: absolute;
+  bottom: 0;
+}
+footer p {
+  margin: 20px 0;
+}
 
+.show-results-btn {
+  margin: 20px 0;
+}
