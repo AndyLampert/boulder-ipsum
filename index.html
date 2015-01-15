@@ -13,17 +13,20 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
-                padding-top: 50px;
+                /*padding-top: 50px;*/
                 padding-bottom: 20px;
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <!-- <script src="js/vendor/skrollr.min.js"></script> -->
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script scr="js/vendor/underscore.js"></script>
     </head>
     <body>
+    <header>
+      <h1>Boulder Ipsum</h1>
+    </header>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -67,41 +70,57 @@
         <div class="col-md-12">
           <h2>Boulder Ipsum</h2>
           <p>Are you Boulder enough??? </p>
-          Paragraphs: <select name="" id="">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
+          Paragraphs:
+          <input type="number" id="paragraphCount">
           <p><a class="btn btn-default show-results-btn" href="#" role="button">Boulder Me!</a></p>
         </div>
       </div>
 
-      <div class="container results-container">
+    <div class="dump"></div>
+     <!--  <div class="container results-container">
         <div class="row">
           <h2>Here is your dose of Boulder:</h2>
           <p id="results"></p>
         </div>
       </div>
 
-      <footer class="container">
+      <div class="container results-container-2">
+        <div class="row">
+          <p id="results-2"></p>
+        </div>
+      </div>
+
+      <div class="container results-container-2">
+        <div class="row">
+          <p id="results-3"></p>
+        </div>
+      </div>
+
+      <div class="container results-container-2">
+        <div class="row">
+          <p id="results-4"></p>
+        </div>
+      </div> -->
+
+      <!--<footer class ="container">
         <p>&copy; Andy Lampert 2014</p>
-      </footer>
+      </footer> -->
     </div> 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <script src="js/vendor/jquery-1.11.1.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
       <script src="js/vendor/bootstrap.min.js"></script>
       <script src="js/vendor/underscore.js"></script>
       <script src="js/main.js"></script>
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
+      <!-- script>
           (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
           function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
           e=o.createElement(i);r=o.getElementsByTagName(i)[0];
           e.src='//www.google-analytics.com/analytics.js';
           r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
           ga('create','UA-XXXXX-X');ga('send','pageview');
-      </script>
+      </script> -->
     </body>
 </html>
