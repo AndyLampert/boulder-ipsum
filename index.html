@@ -5,6 +5,7 @@
 <!-- add suggestion btn -->
 
 <!DOCTYPE html>
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -28,7 +29,8 @@
         
         <!-- <script src="js/vendor/skrollr.min.js"></script> -->
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script scr="js/vendor/underscore.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.js"></script>
+        <script src="js/vendor/underscore.js"></script>
     </head>
     <body>
     <header>
@@ -75,14 +77,21 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-12">
-          <h2>Boulder Ipsum</h2>
+          <!-- <h2>Boulder Ipsum</h2> -->
           <p>Are you Boulder enough??? </p>
           <form action="">
             Paragraphs: 
             <input type="number" id="paragraphCount">
             <input type="submit" class="btn btn-default show-results-btn" value="Boulder Me!" href="#" role="button"></input> 
           </form>
-          <!-- <button id='clipboard-btn'>Copy your Boulderness!</button> -->
+          <!-- <button id='copy-button'>Copy your Boulderness!</button>
+          <button id="my-button_text" data-clipboard-target="clipboard_text">Copy to Clipboard</button>
+          <textarea id="clipboard_textarea">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea> -->
         </div>
       </div>
 

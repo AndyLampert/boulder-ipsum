@@ -3,10 +3,31 @@ var items = ['Boulder', 'rolfing', 'Liquor Mart', 'The Spot', 'flatiron', 'bould
 
 ];
 
+function windowH() {
+	var wH = $(window).height();
+	$('header').css({height: wH});
+}
+windowH();
+
+$(window).on('scroll', function(){
+	var fromTop = $(document).scrollTop()
+	var wH = $(window).height();
+	if (fromTop !== 0){
+		$('header').css({
+			'background-size': 'cover',
+			'background-position': 'center',
+		}).animate({height: 400 +'px'}, 1000);
+		$('header h1').animate({
+			'font-size': '10rem',
+		}, 1000)
+	}
+})
+
+
 // have it put a period after a random number of words like that and then capitalize the first letter of the new sentence
 var dump = $('.dump');
 
-var tempScrollTop = $(window).scrollTop();
+// var tempScrollTop = $(window).scrollTop();
 
 $('.show-results-btn').click(function(){
 	event.preventDefault();
@@ -34,4 +55,16 @@ $('.show-results-btn').click(function(){
 		dump.append(shuffledWithComma);
 	})
 });
-$(window).scrollTop(tempScrollTop);
+
+// $(window).scrollTop(tempScrollTop);
+// var client = new ZeroClipboard( document.getElementById("copy-button") );
+
+// client.on( "ready", function( readyEvent ) {
+
+// 	client.on( "copy", function (event) {
+// 	  var clipboard = event.clipboardData;
+// 	  clipboard.setData( "text/plain", "Copy me!" );
+// 	  clipboard.setData( "text/html", "<b>Copy me!</b>" );
+// 	  clipboard.setData( "application/rtf", "{\\rtf1\\ansi\n{\\b Copy me!}}" );
+// 	});
+// });
