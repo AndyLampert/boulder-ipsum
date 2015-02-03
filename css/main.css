@@ -1,3 +1,7 @@
+body {
+  min-height: 1000px;
+}
+
 .results-container {
   display: none;
 }
@@ -18,7 +22,7 @@ header h1 {
 }
 
 footer {
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #fafafa;
   position: absolute;
   bottom: 0;
 }
@@ -28,4 +32,8 @@ footer p {
 
 .show-results-btn {
   margin: 20px 0;
+}
+
+.dump-item {
+  color: blue;
 }

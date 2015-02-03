@@ -1,8 +1,10 @@
+body {
+	min-height: 1000px;
+}
+
 .results-container {
 	display: none;
 }
-
-
 
 header {
 	height: 400px;
@@ -20,7 +22,7 @@ header {
 }
 
 footer {
-	border-top: 1px solid lightgray; 
+	border-top: 1px solid #fafafa; 
 	position: absolute;
 	bottom: 0;
 	p {
@@ -30,4 +32,8 @@ footer {
 
 .show-results-btn {
 	margin: 20px 0;
+}
+
+.dump-item {
+	color: blue
 }
