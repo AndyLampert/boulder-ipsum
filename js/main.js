@@ -6,7 +6,10 @@ var items = ['Boulder', 'rolfing', 'Liquor Mart', 'The Spot', 'flatiron', 'bould
 // have it put a period after a random number of words like that and then capitalize the first letter of the new sentence
 var dump = $('.dump');
 
+var tempScrollTop = $(window).scrollTop();
+
 $('.show-results-btn').click(function(){
+	event.preventDefault();
 	// clear the DOM on click
 	dump.empty()
 	var paragraphCount = $('#paragraphCount').val();
@@ -31,3 +34,4 @@ $('.show-results-btn').click(function(){
 		dump.append(shuffledWithComma);
 	})
 });
+$(window).scrollTop(tempScrollTop);
